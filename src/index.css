@@ -1,0 +1,91 @@
+body{
+  background-color: #55bae2;
+}
+.to-lists{
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+.to-lists h2{
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+.to-lists input{
+  margin: 10px auto;
+  padding: 10px 5px;
+  border: 2px solid green;
+  border-radius: 5px;;
+}
+.input-sub{
+  display: block;
+  width: 300px;
+}
+.to-lists input:focus{
+  outline:none;
+}
+.list-input{
+  display: flex;
+  align-items:center;
+  width:300px;
+  margin: 0 auto;
+}
+.to-lists button{
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid green;
+  color: #000;
+  font-weight: 600;
+  transition: .5s;
+}
+.to-lists button:hover{
+  background-color: green;
+  color: #fff;
+}
+.list-input input{
+  width:270px;
+}
+.list-input button{
+  margin-left: 5px;
+  background-color: #fff;
+  padding:  10px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid green;
+}
+
+.list-item{
+  width: 300px;
+  margin: 0 auto;
+
+}
+.list-item li{
+  color:rgb(54, 53, 53);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.list-card{
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  width: 300px;
+  margin: 15px auto;
+  padding: 10px;
+}
+.list-card h3{
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 7px;
+}
+
+.list-card ol > li {
+  font-size: 18px;
+  line-height: 24px;
+}
