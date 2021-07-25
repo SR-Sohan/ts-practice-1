@@ -34,6 +34,12 @@ const ToDoLists = () => {
         setListStroe([]);
     }
 
+    // Remove To do list handle
+    const handleRemove = (subject: string) => {
+        const newArray = submitList.filter(list => list.subject !== subject);
+        setSubmitList(newArray);
+    }
+
 
     return (
         <div className="to-lists">
@@ -72,6 +78,7 @@ const ToDoLists = () => {
                         key={list.subject}
                         subject={list.subject}
                         listStore={list.listStore}
+                        handleRemove={handleRemove}
                     />)
             }
 

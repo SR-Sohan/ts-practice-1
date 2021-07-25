@@ -2,10 +2,11 @@ import React from 'react';
 
 interface IProps {
     subject: string,
-    listStore: []
+    listStore: [],
+    handleRemove: (subject: string) => void
 }
 
-const ToDoList = ({ subject, listStore }: IProps) => {
+const ToDoList = ({ subject, listStore, handleRemove }: IProps) => {
 
     return (
         <div className="list-card">
@@ -15,6 +16,7 @@ const ToDoList = ({ subject, listStore }: IProps) => {
                     listStore.map(list => <li key={list}>{list}</li>)
                 }
             </ol>
+            <button onClick={() => handleRemove(subject)}>Remove</button>
         </div>
     );
 };
